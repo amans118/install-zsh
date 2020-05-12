@@ -17,5 +17,8 @@ rm install.sh
 echo "setting custom theme"
 sed -i 's/robbyrussell/intheloop/g' .zshrc
 
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+mv ~/.zsh/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/
+
 echo
-echo '"zsh" is now on the path'
+echo '"zsh" is now set up with custom theme and zsh-autosuggestions Plugin'
