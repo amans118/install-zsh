@@ -14,5 +14,8 @@ sudo chmod +x install.sh
 ./install.sh
 rm install.sh
 
+echo "setting custom theme"
+sed -i 's/robbyrussell/intheloop/g' .zshrc
+
 echo
 echo '"zsh" is now on the path'
